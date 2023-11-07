@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Speech Translator</title>
+</head>
+<body>
+    <h1>AI Speech Translator - Hurr M</h1>
+    <form action="/translate" method="post">
+        <label for="language">Select Language:</label>
+        <select name="language">
+            <option value="ja-JP">Japanese</option>
+            <option value="hi-IN">Hindi</option>
+            <option value="ur-PK">Urdu</option>
+            <option value="it">Italiano</option>
+            <option value="es">Espanol</option>
+            <option value="ar">Arabic</option>
+            <option value="fr">Le French</option>
+            <option value="en-GB">Bri'ish</option>
+            <option value="ta">Tamil</option>
+            <option value="ml">Malayalam</option>
+          
+        </select>
+        <button type="submit">Translate</button>
+    </form>
+    {% if translated_text %}
+        <h2>Translated Text:</h2>
+        <p>{{ translated_text }}</p>
+    {% endif %}
+</body>
+</html>
