@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #FF8C69; /* Pink-ish orange color for the header */
+}
+
+.bubble {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 25px;
+    border: 2px solid #FF8C69;
+    color: white;
+    font-size: 18px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.bubble:hover {
+    background-color: #FF8C69;
+    border-color: #FF8C69;
+    color: black;
+    cursor: pointer;
+}
+
+#translated-text {
+    margin-top: 20px;
+}
